@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "MediMate",
+    "slug": "medimate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/pill.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splashup.jpeg",
+      "resizeMode": "cover"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/pill.png",
+        "backgroundColor": "#0b7285"
+      },
+      "package": "com.lide_am.medimate"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "183148fc-6fa5-4346-897a-347069ed4cfd"
+      }
+    },
+    "owner": "lide_am"
+  }
+}
