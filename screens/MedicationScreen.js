@@ -1,41 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { StatusBar } from "expo-status-bar";
+
 import { AntDesign } from "@expo/vector-icons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import DateTimePicker from "@react-native-community/datetimepicker";
 
 import {
-  Button,
   StyleSheet,
-  Image,
   Text,
   View,
-  Dimensions,
-  FlatList,
-  ScrollView,
   TouchableOpacity,
   ImageBackground,
-  Modal,
   Alert,
   TextInput,
-  Platform,
 } from "react-native";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/native";
 
 import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Feather } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
 
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from "react-native-safe-area-context";
-import * as Device from "expo-device";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+
 import * as Notifications from "expo-notifications";
-import * as Permissions from "expo-permissions";
-import Constants from "expo-constants";
 
 const PermissionComponent = () => {
   useEffect(() => {

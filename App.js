@@ -1,29 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
-  Button,
   StyleSheet,
-  Image,
   Text,
   View,
-  Dimensions,
-  FlatList,
-  ScrollView,
   TouchableOpacity,
   ImageBackground,
   Alert,
 } from "react-native";
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Calendar } from "react-native-calendars";
-import moment from "moment";
+
 import MedicationScreen from "./screens/MedicationScreen";
-//import UpdatesScreen from "./screens/UpdatesScreen";
+
 import MoreScreen from "./screens/MoreScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Feather } from "@expo/vector-icons";
+
 import { Ionicons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import {
@@ -32,13 +25,9 @@ import {
 } from "react-native-safe-area-context";
 import * as Notifications from "expo-notifications";
 
-import Constants from "expo-constants";
-import * as Permissions from "expo-permissions";
-
 function HomeScreen() {
   const insets = useSafeAreaInsets();
   const navigation = useNavigation();
-  const [errorMsg, setErrorMsg] = useState(null);
 
   //calendar
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -291,6 +280,7 @@ function HomeScreen() {
               </Text>
             </View>
           </View>
+
           <View style={{ flex: 4 }}>
             <TouchableOpacity
               style={{

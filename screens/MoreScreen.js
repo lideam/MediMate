@@ -1,35 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { StatusBar } from "expo-status-bar";
+
 import * as Notifications from "expo-notifications";
-import * as Permissions from "expo-permissions";
+
 import {
-  Button,
   StyleSheet,
-  Image,
   Text,
   View,
-  Dimensions,
-  FlatList,
-  ScrollView,
   TouchableOpacity,
-  Platform,
-  TimePickerAndroid,
   ImageBackground,
-  Switch,
   Alert,
 } from "react-native";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { useNavigation } from "@react-navigation/native";
 
 import { FontAwesome5 } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Feather } from "@expo/vector-icons";
+
 import { Ionicons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function MoreScreen({ route }) {
   const insets = useSafeAreaInsets();

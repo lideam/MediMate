@@ -4,10 +4,10 @@
     "slug": "medimate",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/pill.png",
+    "icon": "./assets/lkd.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splashup.jpeg",
+      "image": "./assets/splashup.png",
       "resizeMode": "cover"
     },
     "ios": {
@@ -15,7 +15,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/pill.png",
+        "foregroundImage": "./assets/lkd.png",
         "backgroundColor": "#0b7285"
       },
       "package": "com.lide_am.medimate"
