@@ -12,9 +12,9 @@ import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MedicationScreen from "./screens/MedicationScreen";
-
 import MoreScreen from "./screens/MoreScreen";
 import ProfileScreen from "./screens/ProfileScreen";
+
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import { Ionicons } from "@expo/vector-icons";
